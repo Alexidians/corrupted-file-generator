@@ -1,0 +1,10 @@
+<p>Enter File Extension</p>
+<p><input width="100%" id="extensionInput"></input></p>
+<p><button onclick="generate(document.getElementById('extensionInput').value)">Generate</button></p>
+<a href="null" id="downloadButton" download>Download</a>
+<script>
+function generate(fileExtension) {
+ document.getElementById("downloadButton").href = "corrupted_files/corrupted." + fileExtension
+ alert("generated. click download to download the file")
+}
+</script>
